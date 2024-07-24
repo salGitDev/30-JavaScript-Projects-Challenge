@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: aliceblue;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 3px;
+}
+
+.btn {
+
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 200px;
+    margin-top: 145px;
+    white-space: nowrap;
+    
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+    transition: 1s background-color;
+
+}
+.split {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.split.left{
+    background-color: rgba(127, 255, 212, .3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("https://m.media-amazon.com/images/I/81YSmKnlijL.__AC_SY445_SX342_QL70_ML2_.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    border-right: 1px solid orange;
+}
+
+.split.right{
+    background-color: rgba(255, 127, 227, 0.4);
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("https://m.media-amazon.com/images/I/51Iq+ZuB+NL._AC_SY300_SX300_.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+}
+
+/*for left*/
+.active-left .left{
+    width: 75%;
+}
+.active-left .right{
+    width: 25%;
+}
+/*for left*/
+
+/*for right*/
+.active-right .left{
+    width: 25%;
+}
+.active-right .right{
+    width: 75%;
+}
+/*for right*/
+
+.left, .right{
+    transition: width 2s ease-in-out;
+}
+
