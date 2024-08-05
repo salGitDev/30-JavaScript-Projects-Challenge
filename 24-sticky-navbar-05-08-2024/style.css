@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    
+}
+.navbar {
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 2;
+    justify-content: space-between;
+    border-bottom: 1px solid cyan;
+    transition: background-color 0.6s;
+    
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    font-family: cursive, sans-serif;
+}
+.navbar ul li a:hover{
+    color:black;
+}
+.top-container {
+    background-image: url("https://www.superprof.ca/blog/wp-content/uploads/2018/07/choosing-the-right-computer-1.jpg");
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.top-container h1{
+    color: orangered;
+    font-size: 3em;
+   /* text-align: center;*/
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   letter-spacing: 2px;
+   text-shadow: 1px 2px 3px #fff;
+ }
+
+ .text {
+    margin: 50px 5%;
+    text-align: justify;
+    font-family: sans-serif;
+ }
+ /*p:nth-child(odd) or tr:nth-child(2n+1) */
+ p:nth-child(even){
+    background-color: rgba(138, 43, 226, .15);
+    padding: 20px;
+    border-radius: 10px;
+ }
+ p:nth-child(odd){
+    background-color: rgba(43, 226, 192, .15);
+    padding: 20px;
+    border-radius: 10px;
+ }
+ .navbar.active {
+    background-color: black;
+ }
+ .navbar.active ul li a{
+    color: #fff;
+ }
