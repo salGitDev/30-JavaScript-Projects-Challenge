@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 10, .1);
+   /* display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;*/
+    
+}
+
+.bg-image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://media.istockphoto.com/id/1777773387/photo/mountains-in-the-morning-on-a-foggy-day.webp?s=1024x1024&w=is&k=20&c=IPDu7HWQKBlWzHar3qkS5VD7oRmqzn4B0gMXsBshChk=");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    background-attachment: fixed;
+    background-size: 160%;
+}
+.container{
+    padding: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    font-weight: 500;
+}
+
+p:nth-child(odd){
+    background: #fff;
+    margin: -15px;
+    padding: 15px;
+   
+}
+
+@media (max-width: 800px){
+    .container{
+        padding: 30px;
+    }
+}
