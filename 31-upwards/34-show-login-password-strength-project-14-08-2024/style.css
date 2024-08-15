@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 255, .5);
+}
+
+.h1-text{
+    background-color: rgb(240, 243, 255);
+    font-size: 1.6em;
+    padding: 10px 18px;
+    box-shadow: 1px 1px 1px rebeccapurple;
+    border: 1px solid cyan;
+    border-radius: 15px;
+    margin-bottom: 45px;
+}
+.container {
+    position: relative;
+    max-width: 460px;
+    background: rgba(255, 69, 0, .35);
+    width: 80%;
+    border-radius: 4px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, .3);
+}
+
+.container .input-box{
+    position: relative;
+}
+
+.input-box .show_hide{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    color: #A6A6A6;
+    font-weight: 600;
+}
+.input-box input{
+    height: 60px;
+    width: 100%;
+    border: 2px solid #d3d3d3;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+}
+.container .indicator {
+    display: none;
+    
+}
+.container .indicator.active{
+    display: block;
+    margin-top: 14px;
+}
+
+.indicator .icon-text{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+.icon-text .error_icon {
+    margin-right: 8px;
+    cursor: pointer;
+}
+.icon-text .text{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
